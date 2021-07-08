@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/breath" />
+
+    <TextView
+        android:id="@+id/breathYakenTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7 breathes"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/lessBreathTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Less at 7:45pm"
+        android:layout_below="@+id/breathYakenTxt"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/colorAccent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/todayMinutesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 min today"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/lessBreathTxt"
+        android:layout_marginLeft="35dp"
+        />
+
+    <TextView
+        android:id="@+id/oneMinuteTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/breathYakenTxt"
+        android:layout_marginBottom="-111dp"
+        android:layout_alignParentRight="true"
+        android:text="1 MIN"
+        android:textSize="25dp"
+        android:layout_marginEnd="100dp"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/oneMinuteTxt"
+        android:layout_marginBottom="-681dp"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="START"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/guideTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/todayMinutesTxt"
+        android:layout_marginBottom="-535dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Breath" />
+</RelativeLayout>
